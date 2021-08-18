@@ -1,0 +1,77 @@
+Tutorial para criar um arquivo executável de um projeto de Python desenvolvido no Pycharm
+
+****O arquivo executável permite a execução de um programa em Python desenvolvido no Pycharm em um computador com Windows que não tenha o Python instalado porque pessoas que não são programadores normalmente não tem o Python instalado ou mesmo podem possuir versões diferentes da que foi desenvolvido o código.*****
+
+Passo a  passo para criar o executável ( arquivo com extensão .exe):
+
+1. Digite na pesquisa do Windows o comando: 
+	cmd
+
+2. Abra  o Prompt de Comando;
+
+3. Digite o comando abaixo para instalar o pacote PyInstaller:
+	pip install pyinstaller
+
+	***No prompt aparecerá dessa forma:***
+		C:\Users\SeuUsuario>pip install pyinstaller
+
+
+4. Aguarde a instalação do pacote
+
+5. Digite o comando dir para visualizar seus diretórios e encontrar o local onde os seus projetos estão localizados:
+
+	dir
+
+	***No prompt aparecerá dessa forma:***
+		C:\Users\SeuUsuario>dir
+
+6. O Windows apresentará a lista com seus diretórios;
+
+7. Se a instalação do Pycharm foi feita na pasta Users você encontrará o diretório PycharmProjects;
+
+8. Digite o comando cd PycharmProjects para acessar o diretórios dos projetos em Python:
+
+	cd PycharmProjects
+
+	***No prompt aparecerá dessa forma:***
+		C:\Users\SeuUsuario>cd PycharmProjects
+
+9. Digite o comando dir para visualizar os projetos criados no diretório e confirmar o nome correto do projeto que quer criar o arquivo .exe:
+
+	dir
+
+	***No prompt aparecerá dessa forma:***
+		C:\Users\SeuUsuario\PycharmProjects>dir
+
+10.Digite o comando cd para acessar a pasta do seu projeto:
+	
+	cd
+
+	***No prompt aparecerá dessa forma:***
+		C:\Users\SeuUsuario\PycharmProjects>cd nome_do_projeto
+
+11. Digite o comando para criar o executável. O arquivo criado deve ser do arquivo principal (menu) que fará a chamada das funções dos demais arquivos do projeto:
+
+	pyinstallar nome_do_arquivo.py
+	
+	***No prompt aparecerá dessa forma:***
+
+	C:\Users\SeuUsuario\PycharmProjects>nomeDoProjeto>pyinstaller nome_do_arquivo.py
+
+
+12. Aguarde a criação do arquivo executável;
+
+13. O arquivo executável será criado na pasta C:\Users\SeuUsuario\PycharmProjects\nomeDoProjeto\dist\nomeDoArquivo (será uma pasta com vários arquivos);
+
+14. Abra a pasta e encontrará um arquivo com o nome_que_você_criou e do tipo Aplicativo;
+
+15. Esse é o arquivo executável;
+
+
+
+****************************************************************************************************
+
+********Para criar um .exe para Linux , segue o link de um tutorial da Alura:**************
+
+
+https://www.alura.com.br/artigos/criando-um-executavel-a-partir-de-um-programa-python
